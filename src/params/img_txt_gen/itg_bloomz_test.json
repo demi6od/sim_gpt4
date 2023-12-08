@@ -1,0 +1,24 @@
+{
+  "task": "img_txt_gen",
+  "run_type": "test",
+  "lang_model_name": "../model/bigscience/bloomz-7b1-mt",
+  "blip2_model_name": "../model/Salesforce/blip2-opt-2.7b",
+  "metric": "rouge",
+
+  "num_epoch": 30,
+  "train_batch_size": 20,
+  "dev_batch_size": 20,
+  "test_batch_size": 12,
+  "infer_batch_size": 12,
+
+  "device_id": 0,
+  "device_cnt": 1,
+
+  "max_train": 1e10,
+  "max_dev": 1e10,
+  "max_test": 1e10,
+  "max_infer": 1e10,
+  
+  "max_src_len": 120,
+  "max_tgt_len": 220
+}
